@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.first_lsy.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="choice helper"
+        android:roundIcon="@mipmap/ic_main"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firstapp">
+
+        <activity
+            android:name="com.first_lsy.firstapp.Result1Activity"
+            android:parentActivityName = "com.first_lsy.firstapp.MainActivity" >
+        </activity>
+        <activity android:name="com.first_lsy.firstapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6180526463915099~5997718907" />
+
+    </application>
+
+</manifest>
